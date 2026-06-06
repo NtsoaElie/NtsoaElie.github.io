@@ -1,0 +1,42 @@
+/* ============================================================================
+   tokens.css — Design tokens (the single source of truth).
+   Change a value here once and it updates everywhere (DRY).
+   Colors, fonts, spacing, radii, timings — all live in :root.
+   ========================================================================== */
+
+:root {
+  /* ── color: surfaces ─────────────────────────────────────────────── */
+  --bg:          #07070d;
+  --bg-2:        #0c0c16;
+  --panel:       rgba(182, 157, 255, .045);
+  --panel-line:  rgba(182, 157, 255, .20);
+
+  /* ── color: accents ──────────────────────────────────────────────── */
+  --purple:      #b69dff;
+  --purple-hi:   #cbb8ff;
+  --cyan:        #41e3e0;
+  --magenta:     #ff5cf0;
+
+  /* ── color: text ─────────────────────────────────────────────────── */
+  --text:        #d8d5e8;
+  --muted:       #8b88a3;
+
+  /* ── typography ──────────────────────────────────────────────────── */
+  --mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  --sans: 'Space Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* ── shape ───────────────────────────────────────────────────────── */
+  --radius-sm: 6px;
+  --radius:    11px;
+  --radius-lg: 13px;
+
+  /* ── spacing: fluid section padding (responsive without media queries) */
+  --section-pad-y: clamp(70px, 11vh, 130px);
+  --section-pad-x: clamp(18px, 5vw, 60px);
+  --content-max:   1080px;
+
+  /* ── motion ──────────────────────────────────────────────────────── */
+  --ease:      .25s;
+  --ease-slow: .7s;
+  --lift:      translateY(-3px); /* shared hover-lift for cards */
+}

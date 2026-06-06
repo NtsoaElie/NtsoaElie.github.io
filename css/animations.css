@@ -1,0 +1,42 @@
+/* ============================================================================
+   animations.css — All @keyframes plus scroll-reveal and DEV MODE state.
+   Keyframe names are global, so the rules that use them live with their
+   components; the definitions are collected here.
+   ========================================================================== */
+
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .35; } }
+
+@keyframes blink { 50% { opacity: 0; } }
+
+@keyframes gA {
+  0%, 92% { transform: translate(0); }
+  93%     { transform: translate(-3px, 1px); }
+  96%     { transform: translate(2px, -1px); }
+  100%    { transform: translate(0); }
+}
+@keyframes gB {
+  0%, 90% { transform: translate(0); }
+  91%     { transform: translate(3px, -1px); }
+  95%     { transform: translate(-2px, 1px); }
+  100%    { transform: translate(0); }
+}
+
+@keyframes critpop {
+  0%   { opacity: 0; transform: translate(-50%, -50%) scale(.5); }
+  16%  { opacity: 1; transform: translate(-50%, -95%) scale(1.18); }
+  100% { opacity: 0; transform: translate(-50%, -220%) scale(1); }
+}
+
+@keyframes hue { to { filter: hue-rotate(360deg); } }
+
+/* ── reveal-on-scroll (JS toggles .in) ─────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity var(--ease-slow) ease, transform var(--ease-slow) ease;
+}
+.reveal.in { opacity: 1; transform: none; }
+
+/* ── DEV MODE easter egg (Konami code) ─────────────────────────────── */
+body.devmode { animation: hue 7s linear infinite; }
+body.devmode .scan { opacity: .9; }

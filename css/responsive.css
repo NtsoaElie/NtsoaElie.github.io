@@ -1,0 +1,72 @@
+/* ============================================================================
+   responsive.css — Device breakpoints. Loaded LAST so its rules win.
+   Most sizing is already fluid via clamp() in tokens/layout; these queries
+   handle structural changes per device class.
+
+     · tablet   ≤ 960px
+     · mobile   ≤ 720px  (collapses nav into a slide-in menu)
+     · phone    ≤ 480px
+     · reduced-motion (accessibility)
+   ========================================================================== */
+
+/* ── tablet ────────────────────────────────────────────────────────── */
+@media (max-width: 960px) {
+  .hero { padding-top: 104px; }
+  .skill-grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+  .proj-grid  { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+  .stats { gap: 20px; }
+}
+
+/* ── mobile: collapse nav into slide-in menu ───────────────────────── */
+@media (max-width: 720px) {
+  .nav-toggle { display: block; }
+  .lang-toggle { margin-right: 10px; }   /* tighten next to the burger */
+
+  .nav-links {
+    position: fixed;
+    top: 62px;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    padding: 8px;
+    background: rgba(7, 7, 13, .97);
+    border: 1px solid var(--panel-line);
+    border-radius: 0 0 0 12px;
+    transform: translateX(110%);
+    transition: transform var(--ease);
+  }
+  .nav-links.open { transform: none; }
+  .nav-links a { display: block; padding: 12px 26px; }
+
+  .proj-grid,
+  .skill-grid { grid-template-columns: 1fr; }
+
+  .stats { gap: 18px; }
+  .stat { min-width: 0; flex: 1 1 100%; }
+
+  #toasts { left: 14px; right: 14px; }
+  .toast { min-width: 0; }
+}
+
+/* ── phone: tighten hero typography & spacing ──────────────────────── */
+@media (max-width: 480px) {
+  .hero { padding-top: 92px; min-height: 92vh; }
+  .hero .blurb { font-size: 15px; }
+  .cta { gap: 10px; }
+  .cta .btn { flex: 1 1 100%; justify-content: center; }
+  .term-body { font-size: 15px; }
+  .contact-links a { flex: 1 1 100%; text-align: center; }
+}
+
+/* ── accessibility: honour reduced-motion ──────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal { opacity: 1; transform: none; }
+  .meter.exp > i { width: 99% !important; }
+}
