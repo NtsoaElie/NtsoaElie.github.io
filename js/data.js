@@ -172,7 +172,7 @@ window.PORTFOLIO = Object.freeze({
 
       // footer
       footer: {
-        textHtml: "&copy; {year} {handle} — solo maxxing with <span class=\"heart\">♥</span>",
+        textHtml: "&copy; {year} {handle} — solo maxxing with <span class=\"mark\" aria-hidden=\"true\"></span>",
         hint:     "psst… try the Konami code: ↑ ↑ ↓ ↓ ← → ← → B A",
       },
 
@@ -332,7 +332,7 @@ window.PORTFOLIO = Object.freeze({
       },
 
       footer: {
-        textHtml: "&copy; {year} {handle} — solo maxxing avec <span class=\"heart\">♥</span>",
+        textHtml: "&copy; {year} {handle} — solo maxxing avec <span class=\"mark\" aria-hidden=\"true\"></span>",
         hint:     "psst… essaie le code Konami : ↑ ↑ ↓ ↓ ← → ← → B A",
       },
 
