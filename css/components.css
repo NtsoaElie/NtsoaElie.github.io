@@ -329,23 +329,17 @@
 .boot-skip { margin-top: 10px; font-size: 11px; letter-spacing: .06em; color: var(--muted); }
 .grant { color: var(--cyan); font-weight: 700; letter-spacing: .12em; }
 
-/* ── glitch heading (hero display name) ────────────────────────────── */
+/* ── hero display name — gradient text (matches .btn.primary + .lvl) ── */
 .glitch {
-  position: relative;
   width: max-content;
   max-width: 100%;
   font-size: clamp(44px, 10vw, 108px);
   font-weight: 700;
   line-height: 1.02;
   letter-spacing: -.03em;
-  color: var(--text);
+  background: linear-gradient(90deg, var(--purple), var(--magenta));
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
-.glitch::before,
-.glitch::after {
-  content: attr(data-text);
-  position: absolute;
-  inset: 0;
-  overflow: hidden;
-}
-.glitch::before { color: var(--magenta); clip-path: inset(0 0 55% 0); animation: gA 3.4s infinite linear alternate; }
-.glitch::after  { color: var(--cyan);    clip-path: inset(58% 0 0 0); animation: gB 2.7s infinite linear alternate; }
