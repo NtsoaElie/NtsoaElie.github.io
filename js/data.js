@@ -34,7 +34,7 @@ window.PORTFOLIO = Object.freeze({
     en: {
 
       meta: {
-        title:    "Elie Ramampiarison — Solo Maxxing · Developer Portfolio",
+        title:    "Elie Ramampiarison — Maxxing · Developer Portfolio",
         htmlLang: "en",
       },
 
@@ -54,13 +54,13 @@ window.PORTFOLIO = Object.freeze({
         greet: "> whoami",
         name:  "ELIE",                                  // big glitch display name
         taglines: [
-          "Solo-maxxing the dev game",
+          "Maxxing the dev game",
           "Software Engineering Student · ÉTS",
           "Full-Stack Developer · Java | .NET | TS",
           "Currently shipping CentraFi & SChan",
         ],
         blurbHtml:
-          "<b>Software engineering student</b> at ÉTS, solo-maxxing the " +
+          "<b>Software engineering student</b> at ÉTS, maxxing the " +
           "stack from .NET back-ends to React/TS front-ends. Currently " +
           "shipping side-projects, hunting bugs, and building things people actually use.",
         ctas: [
@@ -172,7 +172,7 @@ window.PORTFOLIO = Object.freeze({
 
       // footer
       footer: {
-        textHtml: "&copy; {year} {handle} — solo maxxing with <span class=\"mark\" aria-hidden=\"true\"></span>",
+        textHtml: "&copy; {year} {handle} — maxxing with <span class=\"mark\" aria-hidden=\"true\"></span>",
         hint:     "psst… try the Konami code: ↑ ↑ ↓ ↓ ← → ← → B A",
       },
 
@@ -183,7 +183,7 @@ window.PORTFOLIO = Object.freeze({
           { text: "> bypassing reality firewall ...", highlight: true },
           { text: "> loading operative @ LV.999 ..." },
         ],
-        grant: "ACCESS GRANTED // solo maxxing engaged. aha~",
+        grant: "ACCESS GRANTED // maxxing engaged. aha~",
       },
 
       // achievement toasts shown the first time each section scrolls into view
@@ -202,7 +202,7 @@ window.PORTFOLIO = Object.freeze({
     fr: {
 
       meta: {
-        title:    "Elie Ramampiarison — Solo Maxxing · Portfolio de développeur",
+        title:    "Elie Ramampiarison — Maxxing · Portfolio de développeur",
         htmlLang: "fr",
       },
 
@@ -219,7 +219,7 @@ window.PORTFOLIO = Object.freeze({
         greet: "> whoami",
         name:  "ELIE",
         taglines: [
-          "Solo-maxxing : mode dev",
+          "Maxxing : mode dev",
           "Étudiant en génie logiciel · ÉTS",
           "Développeur Full-Stack · Java | .NET | TS",
           "En cours : CentraFi & SChan",
@@ -332,7 +332,7 @@ window.PORTFOLIO = Object.freeze({
       },
 
       footer: {
-        textHtml: "&copy; {year} {handle} — solo maxxing avec <span class=\"mark\" aria-hidden=\"true\"></span>",
+        textHtml: "&copy; {year} {handle} — maxxing avec <span class=\"mark\" aria-hidden=\"true\"></span>",
         hint:     "psst… essaie le code Konami : ↑ ↑ ↓ ↓ ← → ← → B A",
       },
 
@@ -342,7 +342,7 @@ window.PORTFOLIO = Object.freeze({
           { text: "> contournement du pare-feu de la réalité ...", highlight: true },
           { text: "> chargement de l'opérateur @ LV.999 ..." },
         ],
-        grant: "ACCÈS AUTORISÉ // solo maxxing engagé. aha~",
+        grant: "ACCÈS AUTORISÉ // maxxing engagé. aha~",
       },
 
       achievements: {

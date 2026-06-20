@@ -1,8 +1,8 @@
-# Portfolio — "Silver Wolf LV.999 · Solo Maxxing"
+# Portfolio — "Silver Wolf LV.999 · Maxxing"
 
 A modular, data-driven developer portfolio. No build step, no dependencies.
 
-Themed after the *Silver Wolf LV.999 — "Solo Maxxing"* trailer: game-UI
+Themed after the *Silver Wolf LV.999 — "Maxxing"* trailer: game-UI
 stat bars, achievement pop-ups on scroll, "+999" crit numbers on click,
 CRT/scanline distortion, and a hidden **DEV MODE** easter egg
 (type the Konami code: `↑ ↑ ↓ ↓ ← → ← → B A`).

@@ -233,7 +233,7 @@
 .contact-links a:hover,
 .contact-links .reveal-num:hover { color: var(--cyan); border-color: var(--cyan); transform: translateY(-2px); }
 
-/* ── achievement toasts (Solo Maxxing pop-ups) ─────────────────────── */
+/* ── achievement toasts (Maxxing pop-ups) ─────────────────────── */
 #toasts {
   position: fixed;
   top: 74px;
