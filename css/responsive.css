@@ -26,6 +26,10 @@
   .sidemark { display: none; }
   /* shrink the giant wolf so it doesn't dominate */
   .wolfmark { width: 80vw; height: 80vw; opacity: .04; }
+  /* fewer particles on mobile (hide the higher-indexed half) */
+  .particles i:nth-child(n+7) { display: none; }
+  /* lighten the glitch flash a touch */
+  .glitch-flash { animation-duration: 16s; }
 
   .nav-links {
     position: fixed;

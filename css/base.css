@@ -87,6 +87,73 @@ body::after {
   -webkit-mask-image: radial-gradient(circle, #000 55%, transparent 78%);
 }
 
+/* ── scan-sweep: cyan refresh line gliding top→bottom (hack-UI feel) ── */
+.scan-sweep {
+  position: fixed;
+  inset: 0;
+  z-index: 9996;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 47%,
+    rgba(65, 227, 224, .10) 49.5%,
+    rgba(255, 92, 240, .06) 50%,
+    rgba(65, 227, 224, .10) 50.5%,
+    transparent 53%,
+    transparent 100%
+  );
+  background-size: 100% 220%;
+  background-repeat: no-repeat;
+  animation: scanSweep 8s linear infinite;
+  mix-blend-mode: screen;
+}
+
+/* ── glitch flash: brief RGB shift every ~11s ──────────────────────── */
+.glitch-flash {
+  position: fixed;
+  inset: 0;
+  z-index: 9995;
+  pointer-events: none;
+  opacity: 0;
+  background: linear-gradient(90deg, rgba(255, 92, 240, .12), transparent 30%, transparent 70%, rgba(65, 227, 224, .12));
+  animation: glitchFlash 11s infinite;
+  mix-blend-mode: screen;
+}
+
+/* ── floating pixel particles (lavender / cyan / magenta neon dots) ── */
+.particles {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.particles i {
+  position: absolute;
+  bottom: -10px;
+  width: 4px;
+  height: 4px;
+  color: var(--purple);
+  background: currentColor;
+  box-shadow: 0 0 8px currentColor;
+  border-radius: 1px;
+  opacity: 0;
+  animation: floatUp linear infinite;
+}
+.particles i:nth-child(1)  { left:  5%; color: var(--cyan);    animation-duration: 14s; animation-delay:  0s; }
+.particles i:nth-child(2)  { left: 12%;                         animation-duration: 18s; animation-delay:  3s; }
+.particles i:nth-child(3)  { left: 20%; color: var(--magenta); animation-duration: 20s; animation-delay:  6s; }
+.particles i:nth-child(4)  { left: 28%;                         animation-duration: 15s; animation-delay:  9s; }
+.particles i:nth-child(5)  { left: 38%; color: var(--cyan);    animation-duration: 22s; animation-delay:  2s; }
+.particles i:nth-child(6)  { left: 45%; color: var(--magenta); animation-duration: 17s; animation-delay:  7s; }
+.particles i:nth-child(7)  { left: 55%;                         animation-duration: 19s; animation-delay: 11s; }
+.particles i:nth-child(8)  { left: 65%; color: var(--cyan);    animation-duration: 16s; animation-delay:  4s; }
+.particles i:nth-child(9)  { left: 72%;                         animation-duration: 21s; animation-delay:  8s; }
+.particles i:nth-child(10) { left: 80%; color: var(--magenta); animation-duration: 18s; animation-delay:  1s; }
+.particles i:nth-child(11) { left: 88%;                         animation-duration: 14s; animation-delay:  5s; }
+.particles i:nth-child(12) { left: 95%; color: var(--cyan);    animation-duration: 23s; animation-delay: 10s; }
+
 /* ── vertical "LV.999 · SOLO MAXXING" marquee on the right edge ────── */
 .sidemark {
   position: fixed;

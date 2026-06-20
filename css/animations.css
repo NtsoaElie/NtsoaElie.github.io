@@ -41,6 +41,29 @@
   to   { transform: translateY(100vh); }
 }
 
+/* CRT scan-sweep — soft line glides top → bottom */
+@keyframes scanSweep {
+  0%   { background-position: 0% -110%; }
+  100% { background-position: 0% 110%; }
+}
+
+/* periodic glitch flash — brief RGB shift + horizontal jitter */
+@keyframes glitchFlash {
+  0%, 94%  { opacity: 0; transform: translateX(0); }
+  95%      { opacity: 1; transform: translateX(-4px); }
+  96%      { opacity: .6; transform: translateX(5px); }
+  97%      { opacity: 1; transform: translateX(-2px); }
+  98%, 100% { opacity: 0; transform: translateX(0); }
+}
+
+/* pixel particles drift up, fading in at the bottom and out at the top */
+@keyframes floatUp {
+  0%   { transform: translateY(0)      scale(1);   opacity: 0;   }
+  10%  {                                            opacity: .75; }
+  90%  {                                            opacity: .75; }
+  100% { transform: translateY(-105vh) scale(1.2); opacity: 0;   }
+}
+
 /* ── reveal-on-scroll (JS toggles .in) ─────────────────────────────── */
 .reveal {
   opacity: 0;
