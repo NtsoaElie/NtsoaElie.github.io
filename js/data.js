@@ -123,9 +123,9 @@ window.PORTFOLIO = Object.freeze({
           {
             idx:   "MISSION_003 · S-RANK",
             title: "CentraFi",
-            meta:  "Nov 2025 — Present · TypeScript, Tailwind",
+            meta:  "Nov 2025 — Present · TS, Tailwind, React Native",
             desc:  "Mobile + web MVP that centralizes banking data across multiple institutions. Built secure aggregation APIs, designed the cross-platform dashboard UX, and owned the product lifecycle from idea to ship.",
-            stack: ["TypeScript", "Tailwind"],
+            stack: ["TypeScript", "Tailwind", "React Native"],
             links: [
               { label: "code", href: "#" },
             ],
@@ -285,9 +285,9 @@ window.PORTFOLIO = Object.freeze({
           {
             idx:   "MISSION_003 · RANG S",
             title: "CentraFi",
-            meta:  "Novembre 2025 — Présent · TypeScript, Tailwind",
+            meta:  "Novembre 2025 — Présent · TS, Tailwind, React Native",
             desc:  "MVP mobile + web qui centralise les données bancaires de plusieurs institutions. Implémentation d'API sécurisées d'agrégation, conception de l'UX du tableau de bord multiplateforme, et gestion du cycle de vie complet — de l'idéation au déploiement.",
-            stack: ["TypeScript", "Tailwind"],
+            stack: ["TypeScript", "Tailwind", "React Native"],
             links: [
               { label: "code", href: "#" },
             ],
