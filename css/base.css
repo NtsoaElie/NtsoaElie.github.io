@@ -68,3 +68,46 @@ body::after {
   pointer-events: none;
   box-shadow: inset 0 0 190px 34px rgba(0, 0, 0, .55);
 }
+
+/* ── giant pixel-wolf watermark (centered behind hero) ─────────────── */
+.wolfmark {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: clamp(360px, 60vw, 680px);
+  height: clamp(360px, 60vw, 680px);
+  z-index: -1;
+  pointer-events: none;
+  background: url("../favicon.svg") center / contain no-repeat;
+  opacity: .055;
+  transform: translate(-50%, -50%);
+  animation: wolfPulse 7s ease-in-out infinite;
+  /* fade edges so it doesn't fight section content */
+  mask-image: radial-gradient(circle, #000 55%, transparent 78%);
+  -webkit-mask-image: radial-gradient(circle, #000 55%, transparent 78%);
+}
+
+/* ── vertical "LV.999 · SOLO MAXXING" marquee on the right edge ────── */
+.sidemark {
+  position: fixed;
+  top: 0;
+  right: 10px;
+  width: 18px;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .32em;
+  color: var(--purple);
+  opacity: .22;
+}
+.sidemark span {
+  display: inline-block;
+  white-space: nowrap;
+  animation: sidemarkScroll 36s linear infinite;
+}

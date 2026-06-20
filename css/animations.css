@@ -29,6 +29,18 @@
 
 @keyframes hue { to { filter: hue-rotate(360deg); } }
 
+/* slow breath for the giant wolf watermark behind the hero */
+@keyframes wolfPulse {
+  0%, 100% { opacity: .045; transform: translate(-50%, -50%) scale(1);    }
+  50%      { opacity: .085; transform: translate(-50%, -50%) scale(1.025); }
+}
+
+/* vertical side-panel marquee — text scrolls from top to bottom */
+@keyframes sidemarkScroll {
+  from { transform: translateY(-100%); }
+  to   { transform: translateY(100vh); }
+}
+
 /* ── reveal-on-scroll (JS toggles .in) ─────────────────────────────── */
 .reveal {
   opacity: 0;
