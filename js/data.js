@@ -166,7 +166,7 @@ window.PORTFOLIO = Object.freeze({
           { label: "✦ email",    href: "mailto:ntsoaelie@gmail.com" },
           { label: "✦ github",   href: "https://github.com/NtsoaElie",                  external: true },
           { label: "✦ linkedin", href: "https://www.linkedin.com/in/elieramampiarison/?locale=en", external: true },
-          { label: "✦ phone",    href: "tel:+15149296645" },
+          { label: "✦ phone",    reveal: "✦ 514-929-6645" },
         ],
       },
 
@@ -327,7 +327,7 @@ window.PORTFOLIO = Object.freeze({
           { label: "✦ courriel", href: "mailto:ntsoaelie@gmail.com" },
           { label: "✦ github",   href: "https://github.com/NtsoaElie",                  external: true },
           { label: "✦ linkedin", href: "https://www.linkedin.com/in/elieramampiarison/?locale=fr", external: true },
-          { label: "✦ téléphone", href: "tel:+15149296645" },
+          { label: "✦ téléphone", reveal: "✦ 514-929-6645" },
         ],
       },
 

@@ -152,6 +152,13 @@
     document.querySelectorAll('.btn, .proj').forEach(function (el) {
       el.addEventListener('click', onCrit);   // duplicate listeners are deduped per node-fn pair
     });
+
+    // click-to-reveal buttons (e.g. phone number) — swap label on click
+    document.querySelectorAll('.reveal-num').forEach(function (el) {
+      el.addEventListener('click', function () {
+        if (this.dataset.revealed) this.textContent = this.dataset.revealed;
+      });
+    });
   }
   function onCrit(e) { crit(e.clientX, e.clientY); }
 

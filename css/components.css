@@ -218,7 +218,8 @@
   justify-content: center;
   margin-top: 26px;
 }
-.contact-links a {
+.contact-links a,
+.contact-links .reveal-num {
   font-family: var(--mono);
   font-size: 14px;
   padding: 12px 22px;
@@ -227,8 +228,10 @@
   background: var(--panel);
   color: var(--text);
   transition: .22s;
+  cursor: pointer;
 }
-.contact-links a:hover { color: var(--cyan); border-color: var(--cyan); transform: translateY(-2px); }
+.contact-links a:hover,
+.contact-links .reveal-num:hover { color: var(--cyan); border-color: var(--cyan); transform: translateY(-2px); }
 
 /* ── achievement toasts (Solo Maxxing pop-ups) ─────────────────────── */
 #toasts {

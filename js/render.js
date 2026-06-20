@@ -140,7 +140,14 @@
     fill('[data-render="contact"]', header(c.eyebrow, c.titleHtml) +
       termCard(c.terminalTitle, c.lines) +
       '<div class="contact-links">' +
-        list(c.links, function (l) { return '<a href="' + l.href + '"' + ext(l) + '>' + l.label + '</a>'; }) +
+        list(c.links, function (l) {
+          // a `reveal` field means "click to display this text" (no href)
+          if (l.reveal !== undefined) {
+            return '<button class="reveal-num" type="button" data-revealed="' +
+              attr(l.reveal) + '">' + l.label + '</button>';
+          }
+          return '<a href="' + l.href + '"' + ext(l) + '>' + l.label + '</a>';
+        }) +
       '</div>');
 
     /* ── footer ────────────────────────────────────────────────── */
