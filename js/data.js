@@ -23,7 +23,7 @@ window.PORTFOLIO = Object.freeze({
 
   /* identity that does NOT change between languages */
   brand: {
-    handle: "ELIE.R",   // shown in nav + footer
+    handle: "ELIE",     // shown in nav + footer
     level:  "LV.999",   // gradient pill in the nav
   },
 
