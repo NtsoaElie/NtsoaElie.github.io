@@ -52,7 +52,7 @@ window.PORTFOLIO = Object.freeze({
       // hero
       hero: {
         greet: "> whoami",
-        name:  "ELIE.R",                                  // big glitch display name
+        name:  "ELIE",                                  // big glitch display name
         taglines: [
           "Solo-maxxing the dev game",
           "Software Engineering Student · ÉTS",
@@ -217,7 +217,7 @@ window.PORTFOLIO = Object.freeze({
 
       hero: {
         greet: "> whoami",
-        name:  "ELIE.R",
+        name:  "ELIE",
         taglines: [
           "Solo-maxxing : mode dev",
           "Étudiant en génie logiciel · ÉTS",
