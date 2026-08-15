@@ -34,6 +34,8 @@
   .dungeon-mist i { filter: blur(28px); }
   .dungeon-mist i:nth-child(4) { display: none; }
   .whoosh.w3 { display: none; }
+  /* fewer flame wisps on small screens */
+  .shadow-flames i:nth-child(n+5) { display: none; }
 
   .nav-links {
     position: fixed;

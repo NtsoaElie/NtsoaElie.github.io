@@ -84,6 +84,34 @@ body::before {
 .dungeon-mist i:nth-child(3) { left: 68%; width: 300px; height: 300px; animation-duration: 30s; animation-delay: 15s; }
 .dungeon-mist i:nth-child(4) { left: 88%; width: 260px; height: 260px; animation-duration: 22s; animation-delay: 20s; }
 
+/* ── burning shadows: flickering black-violet flame wisps off the floor ── */
+.shadow-flames {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+.shadow-flames i {
+  position: absolute;
+  bottom: -60px;
+  border-radius: 50% 50% 48% 52% / 68% 62% 38% 32%;
+  background: linear-gradient(0deg, rgba(139, 47, 224, 0) 0%, rgba(139, 47, 224, .6) 32%, rgba(181, 123, 255, .8) 64%, rgba(240, 228, 255, .55) 80%, transparent 100%);
+  filter: blur(3px);
+  opacity: 0;
+  transform-origin: bottom center;
+  mix-blend-mode: screen;
+  animation-name: flameRise, flameFlicker;
+  animation-timing-function: ease-out, ease-in-out;
+  animation-iteration-count: infinite, infinite;
+}
+.shadow-flames i:nth-child(1) { left:  8%; width: 30px; height: 60px; animation-duration:   9s, 2.1s; animation-delay: 0s, 0s;  }
+.shadow-flames i:nth-child(2) { left: 22%; width: 40px; height: 82px; animation-duration:  11s, 1.7s; animation-delay: 2s, .3s; }
+.shadow-flames i:nth-child(3) { left: 41%; width: 26px; height: 54px; animation-duration:   8s, 2.4s; animation-delay: 4s, .6s; }
+.shadow-flames i:nth-child(4) { left: 60%; width: 36px; height: 74px; animation-duration:  10s, 1.9s; animation-delay: 1s, .2s; }
+.shadow-flames i:nth-child(5) { left: 78%; width: 30px; height: 62px; animation-duration: 9.5s, 2.2s; animation-delay: 3s, .5s; }
+.shadow-flames i:nth-child(6) { left: 92%; width: 24px; height: 50px; animation-duration: 7.5s, 1.6s; animation-delay: 5s, .8s; }
+
 /* ── shadow whoosh: a shadow-step burn line dashes past every so often ── */
 .whoosh {
   position: fixed;
