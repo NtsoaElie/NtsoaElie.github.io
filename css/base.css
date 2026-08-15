@@ -11,7 +11,7 @@ html { scroll-behavior: smooth; }
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: var(--sans);
+  font-family: var(--serif);
   line-height: 1.6;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
@@ -33,20 +33,6 @@ body::before {
     radial-gradient(900px 600px at 80% -10%, rgba(139, 47, 224, .16), transparent 60%),
     radial-gradient(700px 500px at 0% 100%, rgba(70, 200, 255, .10), transparent 55%),
     var(--bg);
-}
-
-/* ── ambient background: masked grid ───────────────────────────────── */
-body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-  background-image:
-    linear-gradient(rgba(139, 47, 224, .045) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(139, 47, 224, .045) 1px, transparent 1px);
-  background-size: 46px 46px;
-  mask-image: radial-gradient(circle at 50% 40%, #000 0%, transparent 78%);
 }
 
 /* ── vignette: darkens the edges like torchlight in a dungeon ───────── */

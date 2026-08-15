@@ -20,7 +20,7 @@
   var termCard = function (title, lines) {
     return '' +
       '<div class="term reveal">' +
-        '<div class="term-bar"><i class="r"></i><i class="y"></i><i class="g"></i>' +
+        '<div class="term-bar"><span class="seal"></span>' +
           '<span>' + title + '</span></div>' +
         '<div class="term-body">' +
           list(lines, function (l) {

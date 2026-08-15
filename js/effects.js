@@ -49,7 +49,7 @@
       if (done) return;
       node.textContent = L.t.slice(0, j++);
       if (j <= L.t.length) setTimeout(step, 16);
-      else { node.innerHTML += ' <span class="ok">[ok]</span>'; setTimeout(function () { typeLine(i + 1); }, 130); }
+      else { node.innerHTML += ' <span class="ok">✓</span>'; setTimeout(function () { typeLine(i + 1); }, 130); }
     })();
   }
 

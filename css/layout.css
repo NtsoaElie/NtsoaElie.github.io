@@ -25,7 +25,7 @@ nav.solid {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-family: var(--mono);
+  font-family: var(--display);
   font-weight: 700;
   letter-spacing: .04em;
 }
@@ -52,8 +52,9 @@ nav.solid {
 .nav-links {
   display: flex;
   gap: 26px;
-  font-family: var(--mono);
-  font-size: 13px;
+  font-family: var(--serif);
+  font-size: 15px;
+  letter-spacing: .02em;
 }
 .nav-links a {
   position: relative;
@@ -78,7 +79,7 @@ nav.solid {
   background: none;
   border: 1px solid var(--panel-line);
   color: var(--text);
-  font-family: var(--mono);
+  font-family: var(--serif);
   padding: 6px 10px;
   border-radius: var(--radius-sm);
   cursor: pointer;
@@ -92,19 +93,30 @@ section {
 }
 
 .eyebrow {
-  font-family: var(--mono);
-  font-size: 12.5px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--serif);
+  font-size: 13.5px;
+  font-weight: 600;
+  font-style: italic;
   letter-spacing: .22em;
-  color: var(--cyan);
+  color: var(--purple-hi);
   text-transform: uppercase;
   margin-bottom: 14px;
 }
-.eyebrow::before { content: "// "; }
+.eyebrow::before {
+  content: "";
+  width: 30px;
+  height: 1px;
+  background: linear-gradient(90deg, var(--purple), transparent);
+}
 
 h2.title {
+  font-family: var(--display);
   font-size: clamp(28px, 4.6vw, 46px);
   font-weight: 700;
-  letter-spacing: -.02em;
+  letter-spacing: -.01em;
   margin-bottom: 34px;
 }
 h2.title b { color: var(--purple); }
@@ -161,8 +173,8 @@ h2.title b { color: var(--purple); }
 footer {
   text-align: center;
   padding: 40px 20px;
-  font-family: var(--mono);
-  font-size: 12px;
+  font-family: var(--serif);
+  font-size: 13.5px;
   color: var(--muted);
   border-top: 1px solid var(--panel-line);
 }

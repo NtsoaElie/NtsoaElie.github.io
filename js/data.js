@@ -78,7 +78,7 @@ window.PORTFOLIO = Object.freeze({
       about: {
         eyebrow:       "about",
         titleHtml:     "The <b>Hunter</b> behind the screen",
-        terminalTitle: "~/about — zsh",
+        terminalTitle: "Hunter's Log",
         lines: [
           { html: "Hi — I'm <b>Elie Ramampiarison</b>, a software engineering student at <b>ÉTS</b> in Montréal." },
           { html: "Previously: DEC in Computer Science &amp; Technology at <b>Champlain College</b>. Recently: .NET intern alum @ <b>CCL Industries</b>. Currently: automation &amp; web intern @ <b>L'original</b>." },
@@ -165,7 +165,7 @@ window.PORTFOLIO = Object.freeze({
       contact: {
         eyebrow:       "uplink",
         titleHtml:     "Let's <b>connect</b>",
-        terminalTitle: "~/contact — establishing uplink",
+        terminalTitle: "Guild Hall",
         lines: [
           { html: "Open to internships, freelance, and interesting collaborations." },
           { html: "based in Montréal · response faster than a frame-perfect input.", muted: true },
@@ -250,7 +250,7 @@ window.PORTFOLIO = Object.freeze({
       about: {
         eyebrow:       "à propos",
         titleHtml:     "Le <b>Hunter</b> derrière l'écran",
-        terminalTitle: "~/à-propos — zsh",
+        terminalTitle: "Journal du Hunter",
         lines: [
           { html: "Salut — je suis <b>Elie Ramampiarison</b>, étudiant en génie logiciel à l'<b>ÉTS</b>, à Montréal." },
           { html: "Avant : DEC en informatique et technologie au <b>Champlain College</b>. Récemment : stage .NET chez <b>CCL Industries</b>. Actuellement : stagiaire automatisation &amp; web chez <b>L'original</b>." },
@@ -334,7 +334,7 @@ window.PORTFOLIO = Object.freeze({
       contact: {
         eyebrow:       "liaison",
         titleHtml:     "Restons <b>en contact</b>",
-        terminalTitle: "~/contact — établissement de la liaison",
+        terminalTitle: "Salle de guilde",
         lines: [
           { html: "Ouvert aux stages, mandats freelance et collaborations intéressantes." },
           { html: "basé à Montréal · réponse plus rapide qu'un input frame-perfect.", muted: true },

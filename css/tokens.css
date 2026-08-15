@@ -22,8 +22,12 @@
   --muted:       #8a80a8;
 
   /* ── typography ──────────────────────────────────────────────────── */
-  --mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
-  --sans: 'Space Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  /* mono: reserved for the diegetic "System" UI only — stat window, boot
+     readout, rank/quest tags, notifications. Everything else (nav, prose,
+     buttons, headings) is the medieval-fantasy pairing below. */
+  --mono:    'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  --display: 'Cinzel', Georgia, 'Times New Roman', serif;
+  --serif:   'EB Garamond', Georgia, 'Times New Roman', serif;
 
   /* ── shape ───────────────────────────────────────────────────────── */
   --radius-sm: 6px;
