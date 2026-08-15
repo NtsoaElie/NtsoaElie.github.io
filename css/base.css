@@ -125,16 +125,16 @@ body::after {
 .whoosh.w3 { top: 80%; transform: rotate(-2deg); }
 .whoosh.w3 i { animation-duration: 23s; animation-delay: 13s; }
 
-/* ── glitch flash: brief RGB shift every ~11s ──────────────────────── */
-.glitch-flash {
+/* ── torch flicker: the whole scene dims for a beat, like guttering dungeon light ── */
+.torch-flicker {
   position: fixed;
   inset: 0;
   z-index: 9995;
   pointer-events: none;
+  background: var(--bg);
   opacity: 0;
-  background: linear-gradient(90deg, rgba(200, 30, 58, .12), transparent 30%, transparent 70%, rgba(70, 200, 255, .12));
-  animation: glitchFlash 11s infinite;
-  mix-blend-mode: screen;
+  animation: torchFlicker 9s infinite;
+  mix-blend-mode: multiply;
 }
 
 /* ── floating pixel particles (lavender / cyan / magenta neon dots) ── */

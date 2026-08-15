@@ -85,13 +85,13 @@
   100%    { left: 105%; opacity: 0; }
 }
 
-/* periodic glitch flash — brief RGB shift + horizontal jitter */
-@keyframes glitchFlash {
-  0%, 94%  { opacity: 0; transform: translateX(0); }
-  95%      { opacity: 1; transform: translateX(-4px); }
-  96%      { opacity: .6; transform: translateX(5px); }
-  97%      { opacity: 1; transform: translateX(-2px); }
-  98%, 100% { opacity: 0; transform: translateX(0); }
+/* periodic torch flicker — the scene dims for a couple beats, no motion */
+@keyframes torchFlicker {
+  0%, 90%   { opacity: 0; }
+  91%       { opacity: .55; }
+  92.5%     { opacity: .1; }
+  94%       { opacity: .4; }
+  96%, 100% { opacity: 0; }
 }
 
 /* pixel particles drift up, fading in at the bottom and out at the top */
