@@ -106,7 +106,7 @@ window.PORTFOLIO = Object.freeze({
           {
             idx:   "INTERNSHIP · L'ORIGINAL",
             title: "Automation & Web Dev Intern",
-            meta:  "Aug 2026 — Present · Montréal, QC",
+            meta:  "Jun 2026 — Present · Montréal, QC",
             desc:  "Contributing to website updates and building an internal bot that streamlines core business processes — saving the team an estimated 3–5 hours of manual work per week.",
             stack: ["Automation", "Web Dev"],
             links: [],
@@ -276,7 +276,7 @@ window.PORTFOLIO = Object.freeze({
           {
             idx:   "STAGE · L'ORIGINAL",
             title: "Stagiaire automatisation & web",
-            meta:  "Août 2026 — Présent · Montréal, QC",
+            meta:  "Juin 2026 — Présent · Montréal, QC",
             desc:  "Contribution aux mises à jour du site web et développement d'un bot interne qui automatise des processus d'affaires clés — un gain estimé de 3 à 5 heures de travail manuel par semaine pour l'équipe.",
             stack: ["Automatisation", "Web"],
             links: [],
