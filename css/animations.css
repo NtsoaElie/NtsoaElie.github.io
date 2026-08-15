@@ -29,8 +29,8 @@
 
 @keyframes hue { to { filter: hue-rotate(360deg); } }
 
-/* slow breath for the giant wolf watermark behind the hero */
-@keyframes wolfPulse {
+/* slow breath for the shadow-monarch watermark behind the hero */
+@keyframes shadowPulse {
   0%, 100% { opacity: .045; transform: translate(-50%, -50%) scale(1);    }
   50%      { opacity: .085; transform: translate(-50%, -50%) scale(1.025); }
 }

@@ -24,8 +24,8 @@
 
   /* hide the side marquee — no room next to content on small screens */
   .sidemark { display: none; }
-  /* shrink the giant wolf so it doesn't dominate */
-  .wolfmark { width: 80vw; height: 80vw; opacity: .04; }
+  /* shrink the giant sigil so it doesn't dominate */
+  .shadowmark { width: 80vw; height: 80vw; opacity: .04; }
   /* fewer particles on mobile (hide the higher-indexed half) */
   .particles i:nth-child(n+7) { display: none; }
   /* lighten the glitch flash a touch */
@@ -38,7 +38,7 @@
     flex-direction: column;
     gap: 0;
     padding: 8px;
-    background: rgba(7, 7, 13, .97);
+    background: rgba(6, 4, 15, .97);
     border: 1px solid var(--panel-line);
     border-radius: 0 0 0 12px;
     transform: translateX(110%);

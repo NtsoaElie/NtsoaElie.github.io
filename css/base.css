@@ -30,8 +30,8 @@ body::before {
   inset: 0;
   z-index: -2;
   background:
-    radial-gradient(900px 600px at 80% -10%, rgba(182, 157, 255, .16), transparent 60%),
-    radial-gradient(700px 500px at 0% 100%, rgba(65, 227, 224, .10), transparent 55%),
+    radial-gradient(900px 600px at 80% -10%, rgba(155, 92, 255, .16), transparent 60%),
+    radial-gradient(700px 500px at 0% 100%, rgba(70, 200, 255, .10), transparent 55%),
     var(--bg);
 }
 
@@ -43,13 +43,13 @@ body::after {
   z-index: -1;
   pointer-events: none;
   background-image:
-    linear-gradient(rgba(182, 157, 255, .045) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(182, 157, 255, .045) 1px, transparent 1px);
+    linear-gradient(rgba(155, 92, 255, .045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(155, 92, 255, .045) 1px, transparent 1px);
   background-size: 46px 46px;
   mask-image: radial-gradient(circle at 50% 40%, #000 0%, transparent 78%);
 }
 
-/* ── CRT scanlines + vignette (Maxxing trailer vibe) ──────────── */
+/* ── CRT scanlines + vignette (System-window vibe) ──────────── */
 .scan {
   position: fixed;
   inset: 0;
@@ -69,8 +69,8 @@ body::after {
   box-shadow: inset 0 0 190px 34px rgba(0, 0, 0, .55);
 }
 
-/* ── giant pixel-wolf watermark (centered behind hero) ─────────────── */
-.wolfmark {
+/* ── giant shadow-monarch watermark (centered behind hero) ─────────────── */
+.shadowmark {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -81,7 +81,7 @@ body::after {
   background: url("../favicon.svg") center / contain no-repeat;
   opacity: .055;
   transform: translate(-50%, -50%);
-  animation: wolfPulse 7s ease-in-out infinite;
+  animation: shadowPulse 7s ease-in-out infinite;
   /* fade edges so it doesn't fight section content */
   mask-image: radial-gradient(circle, #000 55%, transparent 78%);
   -webkit-mask-image: radial-gradient(circle, #000 55%, transparent 78%);
@@ -97,9 +97,9 @@ body::after {
     to bottom,
     transparent 0,
     transparent 47%,
-    rgba(65, 227, 224, .10) 49.5%,
-    rgba(255, 92, 240, .06) 50%,
-    rgba(65, 227, 224, .10) 50.5%,
+    rgba(70, 200, 255, .10) 49.5%,
+    rgba(255, 59, 92, .06) 50%,
+    rgba(70, 200, 255, .10) 50.5%,
     transparent 53%,
     transparent 100%
   );
@@ -116,7 +116,7 @@ body::after {
   z-index: 9995;
   pointer-events: none;
   opacity: 0;
-  background: linear-gradient(90deg, rgba(255, 92, 240, .12), transparent 30%, transparent 70%, rgba(65, 227, 224, .12));
+  background: linear-gradient(90deg, rgba(255, 59, 92, .12), transparent 30%, transparent 70%, rgba(70, 200, 255, .12));
   animation: glitchFlash 11s infinite;
   mix-blend-mode: screen;
 }
@@ -154,7 +154,7 @@ body::after {
 .particles i:nth-child(11) { left: 88%;                         animation-duration: 14s; animation-delay:  5s; }
 .particles i:nth-child(12) { left: 95%; color: var(--cyan);    animation-duration: 23s; animation-delay: 10s; }
 
-/* ── vertical "LV.999 · MAXXING" marquee on the right edge ────── */
+/* ── vertical "LV.999 · ARISE" marquee on the right edge ────── */
 .sidemark {
   position: fixed;
   top: 0;

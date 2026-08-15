@@ -12,12 +12,12 @@ nav {
   justify-content: space-between;
   padding: 16px var(--section-pad-x);
   backdrop-filter: blur(10px);
-  background: linear-gradient(180deg, rgba(7, 7, 13, .85), rgba(7, 7, 13, 0));
+  background: linear-gradient(180deg, rgba(6, 4, 15, .85), rgba(6, 4, 15, 0));
   border-bottom: 1px solid transparent;
   transition: background .3s, border-color .3s;
 }
 nav.solid {
-  background: rgba(7, 7, 13, .92);
+  background: rgba(6, 4, 15, .92);
   border-bottom: 1px solid var(--panel-line);
 }
 

@@ -197,7 +197,7 @@
     if (pos === seq.length) {
       pos = 0;
       var on = document.body.classList.toggle('devmode');
-      toast('DEV MODE', on ? 'reality.exe patched · aha~' : 'reverted to baseline');
+      toast('DEV MODE', on ? 'shadow extraction protocol · Arise' : 'reverted to baseline');
     }
   });
 

@@ -6,16 +6,16 @@
 
 :root {
   /* ── color: surfaces ─────────────────────────────────────────────── */
-  --bg:          #07070d;
-  --bg-2:        #0c0c16;
-  --panel:       rgba(182, 157, 255, .045);
-  --panel-line:  rgba(182, 157, 255, .20);
+  --bg:          #06040f;
+  --bg-2:        #0b0818;
+  --panel:       rgba(155, 92, 255, .045);
+  --panel-line:  rgba(155, 92, 255, .20);
 
   /* ── color: accents ──────────────────────────────────────────────── */
-  --purple:      #b69dff;
-  --purple-hi:   #cbb8ff;
-  --cyan:        #41e3e0;
-  --magenta:     #ff5cf0;
+  --purple:      #9b5cff;
+  --purple-hi:   #c9a8ff;
+  --cyan:        #46c8ff;
+  --magenta:     #ff3b5c;
 
   /* ── color: text ─────────────────────────────────────────────────── */
   --text:        #d8d5e8;
