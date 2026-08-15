@@ -30,6 +30,10 @@
   .particles i:nth-child(n+7) { display: none; }
   /* lighten the glitch flash a touch */
   .glitch-flash { animation-duration: 16s; }
+  /* smaller dungeon-mist blobs + only two whoosh lines on small screens */
+  .dungeon-mist i { filter: blur(28px); }
+  .dungeon-mist i:nth-child(4) { display: none; }
+  .whoosh.w3 { display: none; }
 
   .nav-links {
     position: fixed;

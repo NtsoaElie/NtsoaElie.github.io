@@ -68,10 +68,21 @@
   to   { transform: translateY(100vh); }
 }
 
-/* CRT scan-sweep — soft line glides top → bottom */
-@keyframes scanSweep {
-  0%   { background-position: 0% -110%; }
-  100% { background-position: 0% 110%; }
+/* dungeon mist — fog blobs drift up and fade */
+@keyframes mistRise {
+  0%   { transform: translateY(0) scale(.9);      opacity: 0;  }
+  15%  { opacity: .5; }
+  85%  { opacity: .5; }
+  100% { transform: translateY(-130vh) scale(1.15); opacity: 0; }
+}
+
+/* shadow whoosh — a burn-line dashes across, then rests */
+@keyframes whooshDash {
+  0%, 88% { left: -60%; opacity: 0; }
+  90%     { opacity: 1; }
+  94%     { left: 105%; opacity: .9; }
+  97%     { opacity: 0; }
+  100%    { left: 105%; opacity: 0; }
 }
 
 /* periodic glitch flash — brief RGB shift + horizontal jitter */
@@ -101,4 +112,4 @@
 
 /* ── DEV MODE easter egg (Konami code) ─────────────────────────────── */
 body.devmode { animation: hue 7s linear infinite; }
-body.devmode .scan { opacity: .9; }
+body.devmode .whoosh i { animation-duration: 4s; }
