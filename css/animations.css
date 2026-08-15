@@ -29,6 +29,33 @@
 
 @keyframes hue { to { filter: hue-rotate(360deg); } }
 
+/* ── "Arise" boot sequence ──────────────────────────────────────────── */
+@keyframes circleSpin { to { transform: rotate(360deg); } }
+
+@keyframes mistDrift {
+  0%   { transform: translateY(0) scale(.8);   opacity: 0;  }
+  20%  { opacity: .6; }
+  100% { transform: translateY(-260px) scale(1.3); opacity: 0; }
+}
+
+@keyframes ariseRise {
+  0%   { transform: scaleY(.06); opacity: 0; }
+  25%  { opacity: .9; }
+  100% { transform: scaleY(1);   opacity: 1; }
+}
+
+@keyframes eyeGlow {
+  0%   { opacity: 0; transform: scale(.4);  }
+  60%  { opacity: 1; transform: scale(1.3); }
+  100% { opacity: 1; transform: scale(1);   }
+}
+
+@keyframes ariseFlash {
+  0%   { opacity: 0; transform: scale(.3); }
+  35%  { opacity: 1; }
+  100% { opacity: 0; transform: scale(2.6); }
+}
+
 /* slow breath for the shadow-monarch watermark behind the hero */
 @keyframes shadowPulse {
   0%, 100% { opacity: .045; transform: translate(-50%, -50%) scale(1);    }

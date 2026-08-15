@@ -12,12 +12,12 @@ nav {
   justify-content: space-between;
   padding: 16px var(--section-pad-x);
   backdrop-filter: blur(10px);
-  background: linear-gradient(180deg, rgba(6, 4, 15, .85), rgba(6, 4, 15, 0));
+  background: linear-gradient(180deg, rgba(3, 1, 8, .85), rgba(3, 1, 8, 0));
   border-bottom: 1px solid transparent;
   transition: background .3s, border-color .3s;
 }
 nav.solid {
-  background: rgba(6, 4, 15, .92);
+  background: rgba(3, 1, 8, .92);
   border-bottom: 1px solid var(--panel-line);
 }
 
@@ -43,8 +43,8 @@ nav.solid {
   font-size: 11px;
   font-weight: 700;
   letter-spacing: .1em;
-  color: var(--bg);
-  background: linear-gradient(90deg, var(--purple), var(--magenta));
+  color: #f4eaff;
+  background: linear-gradient(90deg, var(--purple-hi), var(--purple));
   padding: 3px 9px;
   border-radius: var(--radius-sm);
 }

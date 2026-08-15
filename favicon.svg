@@ -6,7 +6,7 @@
     </linearGradient>
     <radialGradient id="bg" cx="0.5" cy="0.4" r="0.75">
       <stop offset="0%"  stop-color="#1a0a30"/>
-      <stop offset="100%" stop-color="#06040f"/>
+      <stop offset="100%" stop-color="#030108"/>
     </radialGradient>
   </defs>
 
@@ -34,11 +34,11 @@
   </g>
 
   <!-- glowing violet eyes (dim halo + bright core, no blur to stay crisp) -->
-  <g fill="#9b5cff" opacity="0.35">
+  <g fill="#8b2fe0" opacity="0.35">
     <rect x="9"  y="13" width="4" height="4"/>
     <rect x="19" y="13" width="4" height="4"/>
   </g>
-  <g fill="#c9a8ff">
+  <g fill="#b57bff">
     <rect x="10" y="14" width="2" height="2"/>
     <rect x="20" y="14" width="2" height="2"/>
   </g>

@@ -5,21 +5,21 @@
    ========================================================================== */
 
 :root {
-  /* ── color: surfaces ─────────────────────────────────────────────── */
-  --bg:          #06040f;
-  --bg-2:        #0b0818;
-  --panel:       rgba(155, 92, 255, .045);
-  --panel-line:  rgba(155, 92, 255, .20);
+  /* ── color: surfaces (near-black, monarch's shadow) ────────────────── */
+  --bg:          #030108;
+  --bg-2:        #0a0416;
+  --panel:       rgba(139, 47, 224, .05);
+  --panel-line:  rgba(139, 47, 224, .22);
 
   /* ── color: accents ──────────────────────────────────────────────── */
-  --purple:      #9b5cff;
-  --purple-hi:   #c9a8ff;
-  --cyan:        #46c8ff;
-  --magenta:     #ff3b5c;
+  --purple:      #8b2fe0;  /* Shadow Monarch aura — dominant hue */
+  --purple-hi:   #b57bff;  /* glow highlight / eye-shine */
+  --cyan:        #46c8ff;  /* [System] window text — used sparingly */
+  --magenta:     #c81e3a;  /* blood-crimson — HP / danger only */
 
   /* ── color: text ─────────────────────────────────────────────────── */
-  --text:        #d8d5e8;
-  --muted:       #8b88a3;
+  --text:        #e4dcf5;
+  --muted:       #8a80a8;
 
   /* ── typography ──────────────────────────────────────────────────── */
   --mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;

@@ -31,8 +31,11 @@
     $('b3').innerHTML = '<span class="grant">' + T().boot.grant + '</span>';
     $('bbar').style.width = '100%';
     setTimeout(function () {
-      boot.classList.add('done');
-      setTimeout(function () { boot.remove(); startTyped(); }, 650);
+      boot.classList.add('flash');
+      setTimeout(function () {
+        boot.classList.add('done');
+        setTimeout(function () { boot.remove(); startTyped(); }, 650);
+      }, 380);
     }, 520);
   }
 
